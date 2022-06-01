@@ -133,7 +133,7 @@ def login():
 		wel2 = mark(wel, style='red')
 		sol().print(wel2)
 		exit()
-	x=instagramAPI(us,pw).loginAPI()
+	x=instagram(us,pw).loginAPI()
 	if x.get('status')=='success':
 		open('.username','a').write(us)
 		open('.kukis.log','a').write(x.get('cookie'))
